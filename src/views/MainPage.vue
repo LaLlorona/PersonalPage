@@ -2,108 +2,101 @@
 	<div>
 		<mainpage-bar></mainpage-bar>
 
-		<v-container fill-height fluid class="section-1">
-			<v-row align="center" justify="center">
-				<v-card>
-					<v-card-subtitle class="pb-0 text-center">
-						hey, my name is
-					</v-card-subtitle>
-					<v-card-subtitle class="pt-0 text-center">
-						Kyungmo Kim
-					</v-card-subtitle>
-				</v-card>
-			</v-row>
-		</v-container>
+		<section-one></section-one>
 
-		<v-container fill-height fluid class="section-2">
-			<div class="area-for-bar"></div>
+		<div class="section-2 pos-rel">
+			<div class="d-flex pos-abs full-screen">
+				<!-- area for background movie, and pictures -->
+				<video
+					id="video"
+					controls
+					autoplay
+					loop
+					muted
+					:height="getBrowserInnerHeight"
+					width="auto"
+					class="ma-0 pa-0"
+				>
+					<source src="@/assets/donut.mp4" type="video/mp4" />
+				</video>
 
-			<v-row align="start" justify="center">
-				<v-card> hey, my name is kyungmo kim </v-card>
-			</v-row>
-		</v-container>
+				<div class="right">
+					right side of movie on section 2 right side of movie on section 2right
+					side of movie on section 2right side of movie on section 2right side
+					of movie on section 2right side of movie on section 2
+				</div>
+			</div>
 
-		<v-container fill-height fluid class="section-3">
-			<div class="area-for-bar"></div>
-			<v-container class="pa-0 ma-0" fill-height fluid>
-				<v-row align="center" justify="center">
-					<div>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
-						dignissimos velit officia. Voluptatibus dicta placeat possimus
-						molestiae quasi earum id accusantium consequatur beatae nesciunt
-						illum quo non labore eligendi ipsa vel aperiam provident maiores
-						nobis, dolorem laborum quae ea voluptatem. Saepe vel ullam illo
-						necessitatibus deleniti eos, impedit harum. Laborum beatae, hic modi
-						ab cupiditate architecto obcaecati enim pariatur quasi mollitia
-						ipsum esse quia sint expedita suscipit rerum consequatur quidem
-						ducimus tempora sit? Eaque fugiat quia quas sequi debitis itaque
-						amet similique numquam tempora. Voluptatibus dolorem numquam odit
-						placeat eius, rem iste? Ipsum quia id tempora dolorem molestias
-						laboriosam assumenda?
-					</div>
-				</v-row>
-			</v-container>
+			<div class="d-flex align-center justify-center pos-abs full-screen">
+				<!-- area for text -->
+				<div>
+					Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil,
+					beatae! Repudiandae doloribus natus eos quos voluptate labore quam
+					tempora necessitatibus, porro accusamus facere magnam ipsum molestias
+					autem consectetur mollitia vel voluptatibus. Repellat id rerum
+					excepturi minus distinctio quis hic vero eligendi? Eveniet
+					voluptatibus quasi mollitia nesciunt, reprehenderit excepturi tenetur
+					corporis error qui vel vero unde consequuntur assumenda nihil totam
+					est beatae quod alias facilis dolor, magni, explicabo magnam aliquid.
+					Nulla sunt sapiente cum qui est ullam! Minima maxime porro perferendis
+					magni animi iste modi harum sapiente est rerum velit eaque corrupti,
+					voluptatum corporis sunt assumenda doloribus beatae sit omnis nihil!
+					Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil,
+					beatae! Repudiandae doloribus natus eos quos voluptate labore quam
+					tempora necessitatibus, porro accusamus facere magnam ipsum molestias
+					autem consectetur mollitia vel voluptatibus. Repellat id rerum
+					excepturi minus distinctio quis hic vero eligendi? Eveniet
+					voluptatibus quasi mollitia nesciunt, reprehenderit excepturi tenetur
+					corporis error qui vel vero unde consequuntur assumenda nihil totam
+					est beatae quod alias facilis dolor, magni, explicabo magnam aliquid.
+					Nulla sunt sapiente cum qui est ullam! Minima maxime porro perferendis
+					magni animi iste modi harum sapiente est rerum velit eaque corrupti,
+					voluptatum corporis sunt assumenda doloribus beatae sit omnis nihil!
+					Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil,
+					beatae! Repudiandae doloribus natus eos quos voluptate labore quam
+					tempora necessitatibus, porro accusamus facere magnam ipsum molestias
+					autem consectetur mollitia vel voluptatibus. Repellat id rerum
+					excepturi minus distinctio quis hic vero eligendi? Eveniet
+					voluptatibus quasi mollitia nesciunt, reprehenderit excepturi tenetur
+					corporis error qui vel vero unde consequuntur assumenda nihil totam
+					est beatae quod alias facilis dolor, magni, explicabo magnam aliquid.
+					Nulla sunt sapiente cum qui est ullam! Minima maxime porro perferendis
+					magni animi iste modi harum sapiente est rerum velit eaque corrupti,
+					voluptatum corporis sunt assumenda doloribus beatae sit omnis nihil!
+				</div>
+			</div>
+		</div>
 
-			<!-- <v-card
-				class="d-flex justify-center mb-6 align-center"
-				:color="$vuetify.theme.dark ? 'grey darken-3' : 'grey lighten-4'"
-				flat
-				tile
-			>
-				<v-card v-for="n in 3" :key="n" class="pa-2" outlined tile>
-					justify-center
-				</v-card>
-			</v-card> -->
-		</v-container>
+		<section-three></section-three>
 
 		<div class="section-4">
 			<div class="area-for-bar"></div>
-			<v-container class="ma-0" fill-height fluid>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
-				dignissimos velit officia. Voluptatibus dicta placeat possimus molestiae
-				quasi earum id accusantium consequatur beatae nesciunt illum quo non
-				labore eligendi ipsa vel aperiam provident maiores nobis, dolorem
-				laborum quae ea voluptatem. Saepe vel ullam illo necessitatibus deleniti
-				eos, impedit harum. Laborum beatae, hic modi ab cupiditate architecto
-				obcaecati enim pariatur quasi mollitia ipsum esse quia sint expedita
-				suscipit rerum consequatur quidem ducimus tempora sit? Eaque fugiat quia
-				quas sequi debitis itaque amet similique numquam tempora. Voluptatibus
-				dolorem numquam odit placeat eius, rem iste? Ipsum quia id tempora
-				dolorem molestias laboriosam assumenda?
-			</v-container>
+			<v-container class="ma-0" fill-height fluid> section 4 </v-container>
 		</div>
 		<div class="section-5">
 			<div class="area-for-bar"></div>
-			<v-container class="ma-0" fill-height fluid>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
-				dignissimos velit officia. Voluptatibus dicta placeat possimus molestiae
-				quasi earum id accusantium consequatur beatae nesciunt illum quo non
-				labore eligendi ipsa vel aperiam provident maiores nobis, dolorem
-				laborum quae ea voluptatem. Saepe vel ullam illo necessitatibus deleniti
-				eos, impedit harum. Laborum beatae, hic modi ab cupiditate architecto
-				obcaecati enim pariatur quasi mollitia ipsum esse quia sint expedita
-				suscipit rerum consequatur quidem ducimus tempora sit? Eaque fugiat quia
-				quas sequi debitis itaque amet similique numquam tempora. Voluptatibus
-				dolorem numquam odit placeat eius, rem iste? Ipsum quia id tempora
-				dolorem molestias laboriosam assumenda?
-			</v-container>
+			<v-container class="ma-0" fill-height fluid> section5 </v-container>
 		</div>
 	</div>
 </template>
 
 <script>
 import MainpageBar from '@/components/MainpageBar.vue';
+import SectionOne from '@/mainpageSections/SectionOne.vue';
+import SectionThree from '@/mainpageSections/SectionThree.vue';
 import VueScrollTo from 'vue-scrollto';
 export default {
 	components: {
 		MainpageBar,
+		SectionOne,
+		SectionThree,
 	},
 	data: function () {
 		return {
 			msg: 'asd',
 			scrollPosition: 0,
 			active: null,
-			lastActive: null,
+			// lastActive: null,
 			lastScrollTop: window.pageYOffset || document.documentElement.scrollTop,
 			scrollStarted: false,
 			down: true,
@@ -111,8 +104,27 @@ export default {
 	},
 	mounted() {
 		this.active = 1;
-		this.lastActive = 1;
+		// this.lastActive = 1;
+		this.$store.commit('commonStore/updateCurrentMainpageSection', 1);
 		window.addEventListener('scroll', this.handleScroll);
+	},
+	computed: {
+		getBrowserInnerHeight() {
+			return window.innerHeight;
+		},
+		getMainpageSectionOnStore() {
+			return this.$store.state.commonStore.currentMainpageSection;
+		},
+	},
+	watch: {
+		getMainpageSectionOnStore(newValue, oldValue) {
+			console.log(this.active);
+			console.log(newValue);
+			if (this.active != newValue) {
+				VueScrollTo.scrollTo(`.section-${newValue}`, 500);
+			}
+			this.active = newValue;
+		},
 	},
 	methods: {
 		handleScroll(e) {
@@ -130,6 +142,10 @@ export default {
 					else vm.active--;
 					vm.scrollStarted = false;
 					document.body.style.overflow = 'auto';
+					vm.$store.commit(
+						'commonStore/updateCurrentMainpageSection',
+						vm.active,
+					);
 				}, 100),
 				x: false,
 				y: true,
@@ -141,6 +157,13 @@ export default {
 				this.down = false;
 			}
 			this.lastScrollTop = st;
+			// if (this.active < 1) {
+			// 	this.active = 1;
+			// } else if (this.active > 5) {
+			// 	this.active = 5;
+			// }
+			// VueScrollTo.scrollTo(`.section-${this.active + 1}`, 500, options);
+
 			if (!this.scrollStarted) {
 				this.scrollStarted = true;
 				if (this.down) {
@@ -172,10 +195,10 @@ export default {
 </script>
 
 <style>
-* {
+/* * {
 	padding: 0;
 	margin: 0;
-}
+} */
 
 .section-1,
 .section-2,
@@ -207,5 +230,49 @@ export default {
 
 .area-for-bar {
 	height: 64px;
+}
+
+.font-dohyeon {
+	font-family: 'Do Hyeon', sans-serif !important;
+}
+
+.name-title {
+	font-size: 100px;
+}
+
+.video-fit-size {
+	min-height: 100vh;
+}
+
+.right {
+	flex: 1;
+	background-color: yellow;
+}
+
+.flex-container {
+	display: flex;
+
+	background-color: red;
+}
+
+.middle-screen {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.full-screen {
+	height: 100vh;
+	width: 100vw;
+}
+
+.pos-abs {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+.pos-rel {
+	position: relative;
 }
 </style>

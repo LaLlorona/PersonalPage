@@ -4,92 +4,41 @@
 
 		<section-one></section-one>
 
-		<div class="section-2 pos-rel">
-			<div class="d-flex pos-abs full-screen">
-				<!-- area for background movie, and pictures -->
-				<video
-					id="video"
-					controls
-					autoplay
-					loop
-					muted
-					:height="getBrowserInnerHeight"
-					width="auto"
-					class="ma-0 pa-0"
-				>
-					<source src="@/assets/donut.mp4" type="video/mp4" />
-				</video>
-
-				<div class="right">
-					right side of movie on section 2 right side of movie on section 2right
-					side of movie on section 2right side of movie on section 2right side
-					of movie on section 2right side of movie on section 2
-				</div>
-			</div>
-
-			<div class="d-flex align-center justify-center pos-abs full-screen">
-				<!-- area for text -->
-				<div>
-					Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil,
-					beatae! Repudiandae doloribus natus eos quos voluptate labore quam
-					tempora necessitatibus, porro accusamus facere magnam ipsum molestias
-					autem consectetur mollitia vel voluptatibus. Repellat id rerum
-					excepturi minus distinctio quis hic vero eligendi? Eveniet
-					voluptatibus quasi mollitia nesciunt, reprehenderit excepturi tenetur
-					corporis error qui vel vero unde consequuntur assumenda nihil totam
-					est beatae quod alias facilis dolor, magni, explicabo magnam aliquid.
-					Nulla sunt sapiente cum qui est ullam! Minima maxime porro perferendis
-					magni animi iste modi harum sapiente est rerum velit eaque corrupti,
-					voluptatum corporis sunt assumenda doloribus beatae sit omnis nihil!
-					Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil,
-					beatae! Repudiandae doloribus natus eos quos voluptate labore quam
-					tempora necessitatibus, porro accusamus facere magnam ipsum molestias
-					autem consectetur mollitia vel voluptatibus. Repellat id rerum
-					excepturi minus distinctio quis hic vero eligendi? Eveniet
-					voluptatibus quasi mollitia nesciunt, reprehenderit excepturi tenetur
-					corporis error qui vel vero unde consequuntur assumenda nihil totam
-					est beatae quod alias facilis dolor, magni, explicabo magnam aliquid.
-					Nulla sunt sapiente cum qui est ullam! Minima maxime porro perferendis
-					magni animi iste modi harum sapiente est rerum velit eaque corrupti,
-					voluptatum corporis sunt assumenda doloribus beatae sit omnis nihil!
-					Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil,
-					beatae! Repudiandae doloribus natus eos quos voluptate labore quam
-					tempora necessitatibus, porro accusamus facere magnam ipsum molestias
-					autem consectetur mollitia vel voluptatibus. Repellat id rerum
-					excepturi minus distinctio quis hic vero eligendi? Eveniet
-					voluptatibus quasi mollitia nesciunt, reprehenderit excepturi tenetur
-					corporis error qui vel vero unde consequuntur assumenda nihil totam
-					est beatae quod alias facilis dolor, magni, explicabo magnam aliquid.
-					Nulla sunt sapiente cum qui est ullam! Minima maxime porro perferendis
-					magni animi iste modi harum sapiente est rerum velit eaque corrupti,
-					voluptatum corporis sunt assumenda doloribus beatae sit omnis nihil!
-				</div>
-			</div>
-		</div>
+		<section-two></section-two>
 
 		<section-three></section-three>
 
-		<div class="section-4">
+		<section-four></section-four>
+
+		<!-- <div class="section-4">
 			<div class="area-for-bar"></div>
 			<v-container class="ma-0" fill-height fluid> section 4 </v-container>
-		</div>
-		<div class="section-5">
+		</div> -->
+
+		<section-five></section-five>
+		<!-- <div class="section-5">
 			<div class="area-for-bar"></div>
 			<v-container class="ma-0" fill-height fluid> section5 </v-container>
-		</div>
+		</div> -->
 	</div>
 </template>
 
 <script>
 import MainpageBar from '@/components/MainpageBar.vue';
 import SectionOne from '@/mainpageSections/SectionOne.vue';
+import SectionTwo from '@/mainpageSections/SectionTwo.vue';
 import SectionThree from '@/mainpageSections/SectionThree.vue';
+import SectionFour from '@/mainpageSections/SectionFour.vue';
+import SectionFive from '@/mainpageSections/SectionFive.vue';
 import VueScrollTo from 'vue-scrollto';
 export default {
 	components: {
 		MainpageBar,
 		SectionOne,
+		SectionTwo,
 		SectionThree,
+		SectionFour,
+		SectionFive,
 	},
 	data: function () {
 		return {
@@ -208,7 +157,7 @@ export default {
 	min-height: 100vh;
 }
 
-.section-1 {
+/* .section-1 {
 	background-color: rgb(99, 76, 76);
 }
 
@@ -226,7 +175,7 @@ export default {
 
 .section-5 {
 	background-color: rgb(124, 112, 90);
-}
+} */
 
 .area-for-bar {
 	height: 64px;

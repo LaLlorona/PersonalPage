@@ -4,19 +4,22 @@
 			<!-- area for background movie, and pictures -->
 
 			<img
-				src="@/assets/face.png"
+				src="@/assets/hi_2.jpg"
 				alt="face"
 				:width="getBrowserInnerWidth"
 				height="auto"
+				class="opaque"
 			/>
 		</div>
 
 		<div class="d-flex align-center justify-center pos-abs full-screen">
 			<v-card outlined color="transparent">
-				<div class="pb-0 text-center text-h4">
+				<div class="pb-0 text-center text-h4 font-white">
 					<i>Hey, I'm</i>
 				</div>
-				<div class="font-dohyeon pt-0 text-center font-weight-black name-title">
+				<div
+					class="font-dohyeon pt-0 text-center font-weight-black name-title font-white"
+				>
 					KYUNGMO KIM
 				</div>
 			</v-card>
@@ -36,7 +39,6 @@ export default {
 
 <style scoped>
 .section-1 {
-	background-color: rgb(71, 126, 71);
 }
 
 .full-screen {
@@ -56,5 +58,13 @@ export default {
 
 .font-dohyeon {
 	font-family: 'Do Hyeon', sans-serif !important;
+}
+
+.font-white {
+	color: white;
+}
+
+.opaque {
+	opacity: 0.8;
 }
 </style>

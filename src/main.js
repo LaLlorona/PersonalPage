@@ -12,5 +12,6 @@ new Vue({
 	router,
 	VueScrollTo,
 	store,
+
 	render: h => h(App),
 }).$mount('#app');

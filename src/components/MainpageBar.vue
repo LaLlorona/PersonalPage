@@ -1,7 +1,6 @@
 <template>
 	<v-app-bar app color="transparent" dark inverted-scroll elevation="0">
-		<v-app-bar-nav-icon></v-app-bar-nav-icon>
-		<v-toolbar-title>Title</v-toolbar-title>
+		<v-toolbar-title class="font-dohyeon">KYUNGMO KIM</v-toolbar-title>
 		<v-spacer></v-spacer>
 		<v-btn-toggle
 			tile
@@ -9,7 +8,12 @@
 			group
 			v-model="currentMainpageSection"
 		>
-			<v-btn plain v-for="section in mainSections" :key="section">
+			<v-btn
+				plain
+				v-for="section in mainSections"
+				:key="section"
+				class="disable-events"
+			>
 				{{ section }}
 			</v-btn>
 		</v-btn-toggle>
@@ -20,7 +24,7 @@
 export default {
 	data: () => ({
 		collapseOnScroll: true,
-		mainSections: ['section1', 'section2', 'section3', 'section4', 'section5'],
+		mainSections: ['Hello', 'My Journey', 'My Interest', 'Hobby', 'Thank you'],
 	}),
 
 	computed: {
@@ -39,4 +43,12 @@ export default {
 };
 </script>
 
-<style></style>
+<style scoped>
+.disable-events {
+	pointer-events: none;
+}
+
+.font-dohyeon {
+	font-family: 'Do Hyeon', sans-serif !important;
+}
+</style>

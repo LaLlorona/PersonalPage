@@ -1,76 +1,47 @@
 <template>
-	<div class="section-4 pos-rel">
-		<div class="d-inline-flex pos-abs full-screen" style="overflow: hidden">
+	<div class="section-4 pos-rel full-screen">
+		<v-row
+			class="fill-height ma-0 pa-0"
+			align="center"
+			justify="center"
+			no-gutters
+		>
+			<v-col cols="4" class="fill-height">
+				<video
+					id="video"
+					controls
+					autoplay
+					loop
+					muted
+					class="ma-0 pa-0 fill-current_container"
+				>
+					<source src="@/assets/donut.mp4" type="video/mp4" />
+				</video>
+			</v-col>
+			<v-col cols="4">
+				<v-img
+					src="@/assets/cycle1_compose.png"
+					class="fill-current_container mx-0 pa-0"
+				></v-img>
+			</v-col>
+			<v-col cols="4">
+				<v-img
+					src="@/assets/drawing2.jpg"
+					class="fill-current_container mx-0 pa-0"
+				>
+				</v-img>
+			</v-col>
+		</v-row>
+		<!-- <div class="d-inline-flex pos-abs full-screen" style="overflow: hidden">
 			<video id="video" controls autoplay loop muted class="ma-0 pa-0">
 				<source src="@/assets/donut.mp4" type="video/mp4" />
 			</video>
-			<v-img
-				src="@/assets/cycle1_compose.png"
-				:width="getBrowserInnerWidth / 3"
-				:height="getBrowserInnerHeight"
-			></v-img>
-			<v-img
-				src="@/assets/drawing2.jpg"
-				:width="getBrowserInnerWidth / 3"
-				:height="getBrowserInnerHeight"
-			>
-			</v-img>
 
-			<!-- area for background movie, and pictures -->
-			<!-- <v-row no-gutters>
-				<v-col cols="2">
-					
-				</v-col>
-				<v-col cols="2">
-					<v-img
-						src="@/assets/boxing_close.png"
-						:height="getBrowserInnerHeight"
-					></v-img>
-				</v-col>
-				<v-col cols="2">
-					<v-img
-						src="@/assets/drawing2.jpg"
-						:height="getBrowserInnerHeight"
-					></v-img>
-				</v-col>
-			</v-row> -->
+			
+		
+		</div> -->
 
-			<!-- <video
-				id="video"
-				controls
-				autoplay
-				loop
-				muted
-				width="50%"
-				class="ma-0 pa-0 flex-grow-1"
-			>
-				<source src="@/assets/donut.mp4" type="video/mp4" />
-			</video> -->
-
-			<!-- <div class="right">
-				<v-row>
-					<v-img src="@/assets/cycle1_compose.png"></v-img>
-					<v-img src="@/assets/drawing2.jpg"></v-img>
-				</v-row>
-
-				<v-row no-gutters>
-					<v-col class="flex-shrink-1" cols="6">
-						<v-img
-							src="@/assets/cycle1_compose.png"
-							:height="getBrowserInnerHeight"
-						></v-img>
-					</v-col>
-					<v-col style="background-color: yellow" class="flex-shrink-1">
-						<v-img
-							src="@/assets/drawing2.jpg"
-							:height="getBrowserInnerHeight"
-						></v-img>
-					</v-col>
-				</v-row>
-			</div> -->
-		</div>
-
-		<!-- <div class="d-flex align-center justify-center pos-abs full-screen">
+		<div class="d-flex align-center justify-center pos-abs full-screen">
 			<v-row align="center" justify="center">
 				<v-col cols="12" align="center" justify="center">
 					<div class="white--text text--lighten-1 text-h2 font-mosaic">
@@ -83,7 +54,7 @@
 					</div>
 				</v-col>
 			</v-row>
-		</div> -->
+		</div>
 	</div>
 </template>
 
@@ -131,5 +102,11 @@ export default {
 
 .font-caveat {
 	font-family: 'Caveat', cursive !important;
+}
+
+.fill-current_container {
+	height: 100%;
+	width: 100%;
+	object-fit: contain;
 }
 </style>

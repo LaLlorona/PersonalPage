@@ -1,21 +1,25 @@
 <template>
 	<div class="section-4 pos-rel">
-		<div class="d-inline-flex pos-abs full-screen">
+		<div class="d-inline-flex pos-abs full-screen" style="overflow: hidden">
+			<video id="video" controls autoplay loop muted class="ma-0 pa-0">
+				<source src="@/assets/donut.mp4" type="video/mp4" />
+			</video>
+			<v-img
+				src="@/assets/cycle1_compose.png"
+				:width="getBrowserInnerWidth / 3"
+				:height="getBrowserInnerHeight"
+			></v-img>
+			<v-img
+				src="@/assets/drawing2.jpg"
+				:width="getBrowserInnerWidth / 3"
+				:height="getBrowserInnerHeight"
+			>
+			</v-img>
+
 			<!-- area for background movie, and pictures -->
 			<!-- <v-row no-gutters>
 				<v-col cols="2">
-					<video
-						id="video"
-						controls
-						autoplay
-						loop
-						muted
-						:height="getBrowserInnerHeight"
-						width="auto"
-						class="ma-0 pa-0"
-					>
-						<source src="@/assets/donut.mp4" type="video/mp4" />
-					</video>
+					
 				</v-col>
 				<v-col cols="2">
 					<v-img
@@ -31,39 +35,42 @@
 				</v-col>
 			</v-row> -->
 
-			<video
+			<!-- <video
 				id="video"
 				controls
 				autoplay
 				loop
 				muted
-				:height="getBrowserInnerHeight"
-				width="auto"
-				class="ma-0 pa-0"
+				width="50%"
+				class="ma-0 pa-0 flex-grow-1"
 			>
 				<source src="@/assets/donut.mp4" type="video/mp4" />
-			</video>
+			</video> -->
 
-			<div class="right">
+			<!-- <div class="right">
+				<v-row>
+					<v-img src="@/assets/cycle1_compose.png"></v-img>
+					<v-img src="@/assets/drawing2.jpg"></v-img>
+				</v-row>
+
 				<v-row no-gutters>
-					<v-col cols="2">
+					<v-col class="flex-shrink-1" cols="6">
 						<v-img
 							src="@/assets/cycle1_compose.png"
 							:height="getBrowserInnerHeight"
 						></v-img>
 					</v-col>
-					<v-col cols="2" style="background-color: yellow">
+					<v-col style="background-color: yellow" class="flex-shrink-1">
 						<v-img
 							src="@/assets/drawing2.jpg"
 							:height="getBrowserInnerHeight"
 						></v-img>
 					</v-col>
 				</v-row>
-			</div>
+			</div> -->
 		</div>
 
-		<div class="d-flex align-center justify-center pos-abs full-screen">
-			<!-- area for text -->
+		<!-- <div class="d-flex align-center justify-center pos-abs full-screen">
 			<v-row align="center" justify="center">
 				<v-col cols="12" align="center" justify="center">
 					<div class="white--text text--lighten-1 text-h2 font-mosaic">
@@ -76,7 +83,7 @@
 					</div>
 				</v-col>
 			</v-row>
-		</div>
+		</div> -->
 	</div>
 </template>
 
@@ -85,6 +92,9 @@ export default {
 	computed: {
 		getBrowserInnerHeight() {
 			return window.innerHeight;
+		},
+		getBrowserInnerWidth() {
+			return window.innerWidth;
 		},
 	},
 };

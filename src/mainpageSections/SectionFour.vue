@@ -48,7 +48,7 @@
 				<v-row no-gutters>
 					<v-col cols="2">
 						<v-img
-							src="@/assets/boxing_close.png"
+							src="@/assets/cycle1_compose.png"
 							:height="getBrowserInnerHeight"
 						></v-img>
 					</v-col>
